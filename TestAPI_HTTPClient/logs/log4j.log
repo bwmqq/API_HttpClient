@@ -1,0 +1,982 @@
+2021-01-07 10:13:13,016 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 10:13:13,018 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 10:13:13,020 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 10:13:13,060 INFO  [log] ====================================================================== 
+2021-01-07 10:13:13,060 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 10:13:13,342 INFO  [log] 开始发送post请求... 
+2021-01-07 10:13:13,343 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 10:13:13,343 INFO  [log] 请求参数为：{"sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userPasswd":"1111qqqq","userKey":"21383","platform":"control","tool":"2"} 
+2021-01-07 10:13:13,590 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 10:13:13,700 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"eDOuepQjoGuLi6kb2VO9wUabycxls+ZHuelXzFA5FPaIAWEuOnu6oMsnLdknorBGjwD3zI6Ll/7q+AVae7qFnOoA2Dn7I2xVhxAcMRsujznKX1Hp3K9LYkIRt8eZ6mzAtZUD4X4UjCHoPRf+DQJWeTAc63Pr9FUam9QFxiNxP7Q=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5ODczOTMxNDYsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTg3MzkzLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTg3MzkzMTQ2LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk4NTU5M30.FOSXP_r80Ub42cG8gSlIydd_VptH2VjkaFbYuW3FInMKvrV451SC9LCt676yulz-MmZxC31kYDf82s63Uk4Skg","tokenExpires":1609987393146,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 10:13:13,769 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 10:13:13,769 ERROR [log] java.lang.NullPointerException1 
+2021-01-07 10:13:13,770 ERROR [log] null2 
+2021-01-07 10:13:13,770 ERROR [log] class java.lang.NullPointerException3 
+2021-01-07 10:13:13,770 ERROR [log] null4 
+2021-01-07 10:13:13,779 INFO  [log] ====================================================================== 
+2021-01-07 10:13:13,779 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 10:13:13,781 INFO  [log] 开始发送post请求... 
+2021-01-07 10:13:13,781 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 10:13:13,781 INFO  [log] 请求参数为：{"sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userPasswd":"1111qqqq","userKey":"21383","platform":"control","tool":"2"} 
+2021-01-07 10:13:13,899 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 10:13:13,900 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"hX5/f3mgt9s2jRPa9d2abpPHHocOEGCDBwgj3ieHZaKTD6+EO0KgwE/7QBuyDh+yJE7pRLtkb68vL1QsMRGl4cwUGNxpbLajEVwBZbHL00N91b4Qn1rrrG308SbaoT8CVJOLpMYgWu4wCkevDQUx5mAFs+iKGh9LzcKy/aM7qvs=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5ODczOTM0NjcsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTg3MzkzLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTg3MzkzNDY3LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk4NTU5M30.pfMX6l6T6S_FdNkYx8V3R1r7QKuS8YVIRKMXRVgzWkqnnuhX9FIIDLnCqmxkmergFJuFtOYUABZZ0Hu_-2CnOQ","tokenExpires":1609987393467,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 10:13:13,913 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 10:13:13,914 ERROR [log] 响应result不对！期望：resultValue/sysAccount=2138 --> 实际：21383 
+2021-01-07 10:13:13,929 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 10:13:13,929 INFO  [log] ====================================================================== 
+2021-01-07 10:13:13,931 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 10:13:13,931 INFO  [log] ====================================================================== 
+2021-01-07 10:15:23,187 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 10:15:23,188 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 10:15:23,193 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 10:15:23,232 INFO  [log] ====================================================================== 
+2021-01-07 10:15:23,233 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 10:15:23,534 INFO  [log] 开始发送post请求... 
+2021-01-07 10:15:23,534 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 10:15:23,534 INFO  [log] 请求参数为：{"sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userPasswd":"1111qqqq","userKey":"21383","platform":"control","tool":"2"} 
+2021-01-07 10:15:23,778 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 10:15:23,887 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"N37KwlsJOaAmzUbY1uwlc0bv5aoe38bRIfBGGzHtU3FHXMn2ls+uGqpNLLVoyNxrcjkNlvFqggB0fD87nvjSVFqZvgn+az55pY1ud84LtiSv2gmiMJDoP8uY+v3lCp5pFvL6ioKW2FOKZ0csSmmeUN7xFX69QHaw+g9Nl62t+Z0=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5ODc1MjMzMzcsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTg3NTIzLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTg3NTIzMzM3LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk4NTcyM30.oHbQ7pg1UtTOUwNebnPyLRpUydZDbZB_wMKpWI3IZwV63fW-K0d2g83tS2twv4Aefn2tlDrRaJ6QO7wI9FMYCQ","tokenExpires":1609987523337,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 10:15:23,943 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 10:15:23,943 ERROR [log] java.lang.NullPointerException1 
+2021-01-07 10:15:23,943 ERROR [log] null2 
+2021-01-07 10:15:23,943 ERROR [log] class java.lang.NullPointerException3 
+2021-01-07 10:15:23,943 ERROR [log] null4 
+2021-01-07 10:15:23,943 ERROR [log] null5 
+2021-01-07 10:15:23,950 INFO  [log] ====================================================================== 
+2021-01-07 10:15:23,950 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 10:15:23,952 INFO  [log] 开始发送post请求... 
+2021-01-07 10:15:23,952 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 10:15:23,952 INFO  [log] 请求参数为：{"sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userPasswd":"1111qqqq","userKey":"21383","platform":"control","tool":"2"} 
+2021-01-07 10:15:24,083 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 10:15:24,084 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"NGeaMtrCb4lpxUAQn6MeMc9gmF4jY6s0bcRHHCQ7j7fjeF+0jXm7Tb4WHZLheZZWsI8QqTBi5z7jSWvCQNUgKxfLvOl/eTRQkaRAlv+lKlELiwp/ey4Ii2exyldAHbNFIVoA9dh/bRR518UknzUyUKQNkdohLEq289KAibPAOWQ=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5ODc1MjM2NDYsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTg3NTIzLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTg3NTIzNjQ2LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk4NTcyM30.Mygj-DptFUuT1qoR8BGxfsk5zQbxCDzl5iH0HztrgBDlQAX5L-uOnVY57ZGBBCpKdqmBhwqGlIQS1Q4SsF4K9g","tokenExpires":1609987523646,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 10:15:24,108 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 10:15:24,109 ERROR [log] 响应result不对！期望：resultValue/sysAccount=2138 --> 实际：21383 
+2021-01-07 10:15:24,123 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 10:15:24,123 INFO  [log] ====================================================================== 
+2021-01-07 10:15:24,124 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 10:15:24,124 INFO  [log] ====================================================================== 
+2021-01-07 10:15:51,925 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 10:15:51,925 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 10:15:51,929 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 10:15:51,972 INFO  [log] ====================================================================== 
+2021-01-07 10:15:51,972 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 10:15:52,252 INFO  [log] 开始发送post请求... 
+2021-01-07 10:15:52,252 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 10:15:52,252 INFO  [log] 请求参数为：{"sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userPasswd":"1111qqqq","userKey":"21383","platform":"control","tool":"2"} 
+2021-01-07 10:15:52,478 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 10:15:52,606 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"tK51AhjflVL5MyCYvlNj/1ICslz3Ez0/mFwEMg42nvwq3lBaOo7BWqpwAkyM/K4Gf3kJ+DaZr85SYbP1mkXBzlZSCSDRSajnOgTptETaCEX7rsq3/gbemelZ76ZwOSQa8StGZZNklwuXsPjeqwHIwSaHhLf7+Dwd+7ig6PMzpLU=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5ODc1NTIwNDEsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTg3NTUyLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTg3NTUyMDQxLFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk4NTc1Mn0.Cm7emLoA5sqxMhkb5JWSegHmAfKFryp2za6up3sCpEjv2kEtC6YlStc9ndVK-3BkrfD5P1-fCp6ycEBlDi9srA","tokenExpires":1609987552041,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 10:15:52,666 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 10:15:52,666 ERROR [log] java.lang.NullPointerException1 
+2021-01-07 10:15:52,666 ERROR [log] null2 
+2021-01-07 10:15:52,666 ERROR [log] class java.lang.NullPointerException3 
+2021-01-07 10:15:52,666 ERROR [log] null4 
+2021-01-07 10:15:52,672 INFO  [log] ====================================================================== 
+2021-01-07 10:15:52,672 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 10:15:52,674 INFO  [log] 开始发送post请求... 
+2021-01-07 10:15:52,674 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 10:15:52,674 INFO  [log] 请求参数为：{"sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userPasswd":"1111qqqq","userKey":"21383","platform":"control","tool":"2"} 
+2021-01-07 10:15:52,794 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 10:15:52,794 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"hcSOcPaYES5md0IQlkJkAvqLLBhCKWMxeMHZGaDi0dSzTwB63adgfYCAHVl0fecBxITLg8EGoyk1Dgpa68Oaa8J817AJq3epPIbqcIQQ+qm91tsXHXh2/hoRY5s9tcfiZvqNIvBDReOZISEAgO+Qe8ODrdHsqsjAqKYmA7wFWTs=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5ODc1NTIzNjAsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTg3NTUyLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTg3NTUyMzYwLFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk4NTc1Mn0.O9Rge_Pbdxp44mqI2ugHFU1y_HbbCx3fCBjszIiZ8zjSpmwBJhMGYdUpWSr3apXRQEazrejGim-qdUwNbcRVPw","tokenExpires":1609987552360,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 10:15:52,808 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 10:15:52,808 ERROR [log] 响应result不对！期望：resultValue/sysAccount=2138 --> 实际：21383 
+2021-01-07 10:15:52,822 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 10:15:52,822 INFO  [log] ====================================================================== 
+2021-01-07 10:15:52,823 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 10:15:52,823 INFO  [log] ====================================================================== 
+2021-01-07 10:20:45,291 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 10:20:45,291 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 10:20:45,293 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 10:20:45,332 INFO  [log] ====================================================================== 
+2021-01-07 10:20:45,332 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 10:20:45,609 INFO  [log] 开始发送post请求... 
+2021-01-07 10:20:45,610 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 10:20:45,610 INFO  [log] 请求参数为：{"sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userPasswd":"1111qqqq","userKey":"21383","platform":"control","tool":"2"} 
+2021-01-07 10:20:45,858 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 10:20:45,967 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"LHGmLk0T5z/wF1KHKF9QxPv7Rdw/2K8JklGGCheXIIOFFlosITpSLfPeZRIQh6t5SXb81mmhrf8qRuNhnm/1pWw66DfH31cnlt+BmnSxlX9SctFskBh4+4y4aq9TQcCGuV2wADYAX4VOk54QoUTGINrLvRtIb8ETtEl0pClLSeo=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5ODc4NDU0MDksXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTg3ODQ1LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTg3ODQ1NDA5LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk4NjA0NX0.E5iT1lfXXhLggBblTm7U5PO7cULOgjN_6OiVynA0-stfj7CJ3CqgLzsimU-tLzPvPk8qaIinP7-BQBa8Q1o8Hg","tokenExpires":1609987845409,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 10:20:46,021 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 10:20:46,029 INFO  [log] ====================================================================== 
+2021-01-07 10:20:46,029 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 10:20:46,031 INFO  [log] 开始发送post请求... 
+2021-01-07 10:20:46,031 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 10:20:46,031 INFO  [log] 请求参数为：{"sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userPasswd":"1111qqqq","userKey":"21383","platform":"control","tool":"2"} 
+2021-01-07 10:20:46,156 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 10:20:46,156 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"rOiW+zbTR7cTaOXAnBlaTGB147mTNFgmGfn+q12hD42c5qy/hd5x6OxGedQxp5aFpYxJ+UD+6w2GFmZ+bhNRCKh+raZGQTBloWZINcmK/YevbIPvp1VORW+QzrW8RL8i+ODN91SpxGg4XtDw+UTjgHP7tbD9w1mAavk4CfsLMeg=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5ODc4NDU3MTksXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTg3ODQ1LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTg3ODQ1NzE5LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk4NjA0NX0.dW5sominiGONlbDryiXYw51K4kl80dADV6M_MD_Ewtx57dpUXHVrLACDwVQW-CVixm2X2u3U33XkcFNbtFsRgg","tokenExpires":1609987845719,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 10:20:46,170 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 10:20:46,171 ERROR [log] 响应result不对！期望：resultValue/sysAccount=2138 --> 实际：21383 
+2021-01-07 10:20:46,184 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 10:20:46,184 INFO  [log] ====================================================================== 
+2021-01-07 10:20:46,185 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 10:20:46,185 INFO  [log] ====================================================================== 
+2021-01-07 10:21:45,826 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 10:21:45,827 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 10:21:45,829 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 10:21:45,877 INFO  [log] ====================================================================== 
+2021-01-07 10:21:45,877 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 10:21:46,155 INFO  [log] 开始发送post请求... 
+2021-01-07 10:21:46,155 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 10:21:46,155 INFO  [log] 请求参数为：{"sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userPasswd":"1111qqqq","userKey":"21383","platform":"control","tool":"2"} 
+2021-01-07 10:21:46,399 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 10:21:46,508 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"MQCn1W4oSl60E8K+SmysCmvJ6o7X4Jzdr6mImkmXTJGhPhje0vV7AXGU1l1GrZD2ybr70rKwUI8dP9EUeP4Up0iZ1jrVK7TBjnVDLtIJ4+0GlRZvL1zOWpDvXi7YlfNAJvkvEeBJ6abOyFGaQCa9o2xSDMk/+gpvV3qVGTro5bA=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5ODc5MDU5NTAsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTg3OTA1LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTg3OTA1OTUwLFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk4NjEwNX0.NZa5HrbylRTCcoQlbgo1eIiU6-yJ5DrTlIh0k9gahZc4ZIVVRFGttTAbKIJtO-XIelxQSxSDYF7wyBqQqWnGrw","tokenExpires":1609987905950,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 10:21:46,570 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 10:21:46,577 INFO  [log] ====================================================================== 
+2021-01-07 10:21:46,577 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 10:21:46,579 INFO  [log] 开始发送post请求... 
+2021-01-07 10:21:46,579 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 10:21:46,579 INFO  [log] 请求参数为：{"sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userPasswd":"1111qqqq","userKey":"21383","platform":"control","tool":"2"} 
+2021-01-07 10:21:46,716 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 10:21:46,716 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"Ncs9xW2Hf3sR4KhcuHgHMKWJe+mepl6l1n089DB64GZFhTj0zs5yDveXb5ncnov2BZvoxUts6ptusPB4yOixgBD7SnKxv3Z5041ghMWRQRun1ocab1zsvCHdcYwxpyDionIx7eNySrg25KZQoDD0INsX8QYgE8SmbU69MKKNRJc=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5ODc5MDYyNjYsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTg3OTA2LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTg3OTA2MjY2LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk4NjEwNn0.ZUcaeLEEPhfUjQIs9jPHP8N5sKvG_jq6OLryLB4jYT4CLijZ6gZmV6j6mBAoqrdX9drtWRv87-dh2N9mbxGrbQ","tokenExpires":1609987906266,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 10:21:46,730 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 10:21:46,730 ERROR [log] 响应result不对！期望：resultValue/sysAccount=2138 --> 实际：21383 
+2021-01-07 10:21:46,745 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 10:21:46,745 INFO  [log] ====================================================================== 
+2021-01-07 10:21:46,746 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 10:21:46,746 INFO  [log] ====================================================================== 
+2021-01-07 10:22:24,849 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 10:22:24,849 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 10:22:24,852 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 10:22:24,890 INFO  [log] ====================================================================== 
+2021-01-07 10:22:24,890 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 10:22:25,159 INFO  [log] 开始发送post请求... 
+2021-01-07 10:22:25,160 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 10:22:25,160 INFO  [log] 请求参数为：{"sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userPasswd":"1111qqqq","userKey":"21383","platform":"control","tool":"2"} 
+2021-01-07 10:22:25,396 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 10:22:25,509 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"qGRDh4zbHwyFJbpdtK8JQ5UfuiU+sH6zqti+9gCiPOyQ6xCCpWa4c0YXsvtja6l8o2SebAkVB05tL+ZPHE+zecijrkmpdEJ7RthkgZE1UQdreBz9ItDVraKG2Kj+M33dDFiXV480ETLYs8WT22HuEf3QofQL5s8MJBYethpRwCc=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5ODc5NDQ5NTMsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTg3OTQ0LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTg3OTQ0OTUzLFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk4NjE0NH0.t88Ww4m9l7RcSGz9fpZrgRmAq9_R3Z3pEvSCLOAXXGHO0XxTLStxz6uHBCHnVCbWSz8Du7sSp029E4I387nR4Q","tokenExpires":1609987944953,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 10:22:25,582 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 10:22:25,590 INFO  [log] ====================================================================== 
+2021-01-07 10:22:25,590 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 10:22:25,592 INFO  [log] 开始发送post请求... 
+2021-01-07 10:22:25,592 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 10:22:25,592 INFO  [log] 请求参数为：{"sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userPasswd":"1111qqqq","userKey":"21383","platform":"control","tool":"2"} 
+2021-01-07 10:22:25,739 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 10:22:25,739 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"k6BdVv277w08eMoKxhYfvfq7yEhKKeEpcyH4y15M/Vv44WbC6Vo4b8bYzOiyiHMJu3QNQFdhU4P5vShWCPL0pd0OY1D/ZwuxAEqonmL85JjVss/Slh58xYRZmV987AxGBdeergOIMyNH1qeYS+DecxBYkHKN+DqzEJwrAR1ISZU=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5ODc5NDUyODgsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTg3OTQ1LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTg3OTQ1Mjg4LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk4NjE0NX0.mhpSACuuxJ-mFLhfO9pC4uKmlFkieDWcbVcZjQF4LO-pU_AEHpNsQ9XszduTWQTzKoZXRuet7_8hr1j0dhwChg","tokenExpires":1609987945288,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 10:22:25,753 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 10:22:25,753 ERROR [log] 响应result不对！期望：resultValue/sysAccount=2138 --> 实际：21383 
+2021-01-07 10:22:25,767 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 10:22:25,767 INFO  [log] ====================================================================== 
+2021-01-07 10:22:25,768 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 10:22:25,768 INFO  [log] ====================================================================== 
+2021-01-07 10:23:25,296 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 10:23:25,296 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 10:23:25,298 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 10:23:25,336 INFO  [log] ====================================================================== 
+2021-01-07 10:23:25,336 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 10:23:25,620 INFO  [log] 开始发送post请求... 
+2021-01-07 10:23:25,620 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 10:23:25,620 INFO  [log] 请求参数为：{"sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userPasswd":"1111qqqq","userKey":"21383","platform":"control","tool":"2"} 
+2021-01-07 10:23:25,865 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 10:23:25,969 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"YtVRiouAK0UVy5FN3CAFUZRfUJPy62w5/OlkupWootZwmTUeNDH5H8a+gx1B2WGzyUsuvrxrfvuZQlhytQxQTM8A6q5DoZuu6ThI/aKIn69bVGk700dTlF7LsCBZCQbex0rSW4Lib9xj7DGd2AypLrqq7ehpm68/4I/BYkgwNM8=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5ODgwMDU0MTUsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTg4MDA1LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTg4MDA1NDE1LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk4NjIwNX0.TkGGQGq2hyExSNPnwphdeco0q2DvNNyL2RLdD3XsvZZFU-y-vbgxWtXSjc9cd-D9PyppA0x5A3gG8Z3vcBLuMQ","tokenExpires":1609988005415,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 10:23:26,024 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 10:23:26,040 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 10:23:26,040 INFO  [log] ====================================================================== 
+2021-01-07 10:23:26,051 INFO  [log] ====================================================================== 
+2021-01-07 10:23:26,051 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 10:23:26,053 INFO  [log] 开始发送post请求... 
+2021-01-07 10:23:26,053 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 10:23:26,053 INFO  [log] 请求参数为：{"sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userPasswd":"1111qqqq","userKey":"21383","platform":"control","tool":"2"} 
+2021-01-07 10:23:26,185 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 10:23:26,186 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"BYzVtMNt6SkdiiXvXEanAp88rzhFD0qzQZgQqN6OZMHN6Ahf4oLN2o2z1ZttxdsRzeJtCHT5J540NF5K4OhSnAz2XrjlHA0rwFDgq1oro+XGir3l/vwQunex3od2EQAbfQim1gjV93clK6uxef4wtzKJ0A5fXcukvMFwabK+ViA=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5ODgwMDU3NDAsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTg4MDA1LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTg4MDA1NzQwLFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk4NjIwNX0.tlVe8R2PHo6BOnwxSGhudfRp8FtKuBACSDTsM5Mbu90chBj8JIgDeoQAuUzH5b5epYQcGjjBs_VelXUALnOdRQ","tokenExpires":1609988005740,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 10:23:26,198 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 10:23:26,198 ERROR [log] 响应result不对！期望：resultValue/sysAccount=2138 --> 实际：21383 
+2021-01-07 10:23:26,210 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 10:23:26,210 INFO  [log] ====================================================================== 
+2021-01-07 10:23:26,211 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 10:23:26,211 INFO  [log] ====================================================================== 
+2021-01-07 11:49:42,830 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 11:49:42,830 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 11:49:42,833 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 11:49:42,871 INFO  [log] ====================================================================== 
+2021-01-07 11:49:42,871 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 11:49:43,153 INFO  [log] 开始发送post请求... 
+2021-01-07 11:49:43,153 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 11:49:43,153 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 11:49:43,401 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 11:49:43,513 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"EczLDjwYLVgiSWhC6ApUKcpFifN1iewaIZnak5becgK1a4o65z14qcyaEnGXeHrUi5qb0KMFOFTeFUCWB/w43rbDVPWVZvH4Snw2DbYU6ZX87FMFtjTtSW/UN0UMIIXNSSepMW3UjcBmhEnDKXX9mt3IMKXB6KbwmhsnC9h+J3E=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5OTMxODI5MTcsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTkzMTgyLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTkzMTgyOTE3LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk5MTM4Mn0.FLB7TCdlr91giDJGyLsNRrnFEc73NCqRv3Te4FKSpMzPGlYgjz4DAJLwIgyhfS7hyAZCAfvezZmamJkLejf55A","tokenExpires":1609993182917,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 11:49:43,516 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 11:49:43,517 ERROR [log] 响应result不对！期望：resultValue/sysAccount=2138 --> 实际：21383 
+2021-01-07 11:49:43,520 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 11:49:43,520 INFO  [log] ====================================================================== 
+2021-01-07 11:49:43,523 INFO  [log] ====================================================================== 
+2021-01-07 11:49:43,523 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 11:49:43,528 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 11:49:43,528 INFO  [log] ====================================================================== 
+2021-01-07 11:50:12,864 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 11:50:12,864 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 11:50:12,867 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 11:50:12,906 INFO  [log] ====================================================================== 
+2021-01-07 11:50:12,906 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 11:50:13,184 INFO  [log] 开始发送post请求... 
+2021-01-07 11:50:13,185 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 11:50:13,185 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 11:50:13,427 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 11:50:13,546 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"czTOc38ZuEeOUebPIrXFy8kbhrpwVXGlxLLzhiLT6soRup7at6hXU08w6myLlv0k47Qy4C+vA8J+RaKy9yen7HAD6aivbC9lzusJzu0ehMNcWdVFLFUez30zalwKtPWwGSmrELI5VxrF4g79VnH5sv5GGRhezPS4/N47oS7dr7E=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5OTMyMTI5MzUsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTkzMjEyLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTkzMjEyOTM1LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk5MTQxMn0.m-FKTshDvEewZczLlXRfRRY3k6D9SYyM9klRVGr2VkVvM_aupTxCmLEnf2KFCnGZR5mAJfj7UYOXg4iQbvbfCg","tokenExpires":1609993212935,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 11:50:13,610 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 11:50:13,611 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 11:50:13,624 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 11:50:13,624 INFO  [log] ====================================================================== 
+2021-01-07 11:50:13,630 INFO  [log] ====================================================================== 
+2021-01-07 11:50:13,630 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 11:50:13,634 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 11:50:13,634 INFO  [log] ====================================================================== 
+2021-01-07 11:51:30,851 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 11:51:30,852 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 11:51:30,854 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 11:51:30,892 INFO  [log] ====================================================================== 
+2021-01-07 11:51:30,892 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 11:51:31,180 INFO  [log] 开始发送post请求... 
+2021-01-07 11:51:31,180 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 11:51:31,180 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 11:51:31,417 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 11:51:31,524 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"FV1bgyo52ZoTF1Ig1SzbDioGSD6841Mek/k9+YpNth6iAH7Sr7qijSxnGkhfdG1Kt4AtYWhRFi/CIx4NYmo0q6p1nrGn+D3ROMipYG92yR3XsU6navPJVCATvRbs5ugNRJ7VbNjVEx9XyNgE1ybZUMtkD7P3aW2obSW4AxBje34=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5OTMyOTA5MzYsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTkzMjkwLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTkzMjkwOTM2LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk5MTQ5MH0.V1DMQbHd_LsJGu3738OYwfnd4OIZQr7MTbfJCU04x4mQv-HpWzIbvIqMAQZeLVsrA-oeI5rsmKU9K9XjosyaoQ","tokenExpires":1609993290936,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 11:51:31,586 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 11:51:31,587 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 11:51:31,599 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 11:51:31,600 INFO  [log] ====================================================================== 
+2021-01-07 11:51:31,605 INFO  [log] ====================================================================== 
+2021-01-07 11:51:31,605 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 11:51:31,610 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 11:51:31,610 INFO  [log] ====================================================================== 
+2021-01-07 11:52:42,761 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 11:52:42,761 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 11:52:42,763 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 11:52:42,801 INFO  [log] ====================================================================== 
+2021-01-07 11:52:42,801 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 11:52:43,075 INFO  [log] 开始发送post请求... 
+2021-01-07 11:52:43,075 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 11:52:43,075 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 11:52:43,317 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 11:52:43,425 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"StvWDV4ZV/6Bb6GF9poxYrJN6mBFzPqm11n8XGogkgI2oNxgFf4OpnuIpSXZGhQFQMntHOsOxk6ZmNx8UIj/QkooMKW06rlVP2k+iIQYxOjVP9oei+iZeIVirxKqpKsEtrzIRdRnu2bilBVFwrcAsn5KSV0bK8d9fntYbSKhijk=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5OTMzNjI4MzUsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTkzMzYyLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTkzMzYyODM1LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk5MTU2Mn0.HEg4tzq-rIc3GTio34H9C3_CXGy0IxvciP67E1-FHPmDKN50NA7JTHJoOyWXKoE_mvCXnI1zMGjqerXxzU8_5g","tokenExpires":1609993362835,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 11:52:43,481 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 11:52:43,481 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 11:52:43,495 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 11:52:43,495 INFO  [log] ====================================================================== 
+2021-01-07 11:52:43,501 INFO  [log] ====================================================================== 
+2021-01-07 11:52:43,501 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 11:52:43,506 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 11:52:43,506 INFO  [log] ====================================================================== 
+2021-01-07 11:53:20,958 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 11:53:20,958 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 11:53:20,961 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 11:53:21,008 INFO  [log] ====================================================================== 
+2021-01-07 11:53:21,008 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 11:53:21,297 INFO  [log] 开始发送post请求... 
+2021-01-07 11:53:21,297 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 11:53:21,297 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 11:53:21,574 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 11:53:21,683 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"o/MZkgz8RsyJsA4lyg6PsxaSrgCHg85HureFFPOm9g98cHCz6nvISCF24KLEUNH2NQsZOZ3u8V4SH9spuRfTZjz8qcjRuu29KDMdbpJv6dkDdP6XN+xgAnrVxvo2j6lhZ97+MlQVYdxo9L4O4Gj5iZ7+mUxenDJgsTWj1MMB368=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5OTM0MDEwNzcsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTkzNDAxLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTkzNDAxMDc3LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk5MTYwMX0.nb4t8m4OR-pqRX2C6rL7F3RzFoSy6X6s7bA29Cg6YAC6_mtrDAXSR_Ojn-ZWc9L8ZbClqdzTELH6VSoPrawdBw","tokenExpires":1609993401077,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 11:53:21,738 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 11:53:21,738 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 11:53:21,751 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 11:53:21,751 INFO  [log] ====================================================================== 
+2021-01-07 11:53:21,756 INFO  [log] ====================================================================== 
+2021-01-07 11:53:21,756 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 11:53:21,761 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 11:53:21,761 INFO  [log] ====================================================================== 
+2021-01-07 11:53:38,639 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 11:53:38,639 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 11:53:38,641 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 11:53:38,682 INFO  [log] ====================================================================== 
+2021-01-07 11:53:38,682 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 11:53:38,963 INFO  [log] 开始发送post请求... 
+2021-01-07 11:53:38,963 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 11:53:38,963 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 11:53:39,188 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 11:53:39,300 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"iRNQD/p+qU/m04wl9tmzH2xwDkB3q3JQMfJe/ztqnquIf0VgM+n9qx/GrdGObmyM8r8+x8sqUY9/A2cR647onhwFo3FtM9lcwBP4gve/36i2FlVM5MwZmhfxNtjh/hwPjaELx6RGz12lRqljTeT9cPXkvL8+0TxlYKSSZRis7Wo=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5OTM0MTg3MDksXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTkzNDE4LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTkzNDE4NzA5LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk5MTYxOH0.PKOTX9xMJeqgtz-1wjbUw2WGg-CnqFginPqPkTwhcE7i6kE7z_lyg1AupGawXl-QMogS1NJaMyhzc1nUpfzlLQ","tokenExpires":1609993418709,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 11:53:39,357 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 11:53:39,358 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 11:53:39,373 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 11:53:39,373 INFO  [log] ====================================================================== 
+2021-01-07 11:53:39,378 INFO  [log] ====================================================================== 
+2021-01-07 11:53:39,378 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 11:53:39,382 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 11:53:39,383 INFO  [log] ====================================================================== 
+2021-01-07 11:56:01,175 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 11:56:01,175 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 11:56:01,178 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 11:56:01,220 INFO  [log] ====================================================================== 
+2021-01-07 11:56:01,220 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 11:56:01,527 INFO  [log] 开始发送post请求... 
+2021-01-07 11:56:01,527 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 11:56:01,527 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 11:56:01,781 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 11:56:01,890 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"fPlGLUbpUUMEaCBiIDPPTlLK1PfPUGmm4chSowS0NuUP4MZvq6Fuh8k2rZAhA/d4AgNaZsx0yRlv8aTZ05j1WNI1dXtWd+j/Gva3mjNLP+64X/4oGyonTRJedP4ZpawqhnneWkwmKwACvhAuDkEYWd5SO/Atay9aQzUwSF27b5Y=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5OTM1NjEyOTQsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTkzNTYxLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTkzNTYxMjk0LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk5MTc2MX0.yyPtp0b1sNChfOoSFjfNkeaL1WsrRVzLe0H13L6DskZ27K9hF7H8z0eNI4t74JFls3AMhBKQ7RhROXyfG-sbcQ","tokenExpires":1609993561294,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 11:56:01,947 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 11:56:01,947 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 11:56:01,961 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 11:56:01,961 INFO  [log] ====================================================================== 
+2021-01-07 11:56:01,967 INFO  [log] ====================================================================== 
+2021-01-07 11:56:01,967 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 11:56:01,969 INFO  [log] 开始发送post请求... 
+2021-01-07 11:56:01,969 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 11:56:01,969 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 11:56:02,000 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 11:56:02,000 INFO  [log] 获得response为 --> {"success":0,"errorCode":"8520002","message":"token超时/异常","statusCode":200} 
+2021-01-07 11:56:02,015 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 11:56:02,015 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 11:56:02,015 INFO  [log] ====================================================================== 
+2021-01-07 11:56:02,016 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 11:56:02,016 INFO  [log] ====================================================================== 
+2021-01-07 12:00:07,316 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 12:00:07,317 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 12:00:07,319 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 12:00:07,356 INFO  [log] ====================================================================== 
+2021-01-07 12:00:07,356 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 12:00:07,640 INFO  [log] 开始发送post请求... 
+2021-01-07 12:00:07,640 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 12:00:07,640 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 12:00:07,888 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 12:00:08,000 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"Y86s5Ak8MIIQPvMykvr0Y6Bn4sGVonn4OEGkQ+vtLlFGnAFTQt4fmG7YolfeaPuO73cxPEH1/WCcJkODT+is8JTHIuZNQ8hZuJSRm/vgaahOK6T11yf7B/JbPdQl8gpZ3YldLChBjDlgpChjwUsJUHkRWXBB3xsB7WMIEAHQWOk=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5OTM4MDczOTksXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTkzODA3LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTkzODA3Mzk5LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk5MjAwN30.OqfJ0FF_tRs55VUYIUgzE0GxyJRdEqe3NECqzYWZR0AdiNh62Q8n-SJzMwwY6ocOqO-j58YfoVMvYui-S4-R4A","tokenExpires":1609993807399,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 12:00:08,058 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 12:00:08,058 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 12:00:08,071 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 12:00:08,072 INFO  [log] ====================================================================== 
+2021-01-07 12:00:08,078 INFO  [log] ====================================================================== 
+2021-01-07 12:00:08,078 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 12:00:08,080 INFO  [log] 开始发送post请求... 
+2021-01-07 12:00:08,080 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 12:00:08,080 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 12:00:08,113 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 12:00:08,114 INFO  [log] 获得response为 --> {"success":0,"errorCode":"8520003","message":"sessionId有误,无权访问","statusCode":200} 
+2021-01-07 12:00:08,126 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 12:00:08,126 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 12:00:08,126 INFO  [log] ====================================================================== 
+2021-01-07 12:00:08,127 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 12:00:08,127 INFO  [log] ====================================================================== 
+2021-01-07 13:40:25,219 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 13:40:25,219 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 13:40:25,221 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 13:40:25,260 INFO  [log] ====================================================================== 
+2021-01-07 13:40:25,260 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 13:40:25,534 INFO  [log] 开始发送post请求... 
+2021-01-07 13:40:25,534 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 13:40:25,534 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 13:40:25,820 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 13:40:25,927 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"ATukfWya4emQ9Lk0bjYJEaiWeMYcsJOu6N+OR3KVO7OBdfR+CVPg1kRzYYy8kRD/rbQlxtO+/l3zEmVUuB3MvQJD8WPfloP7B3ghnEb7pmiBI6n3OM710BpB4cODm8jWn49toCtsqOdA0XyrYUUlrkeul7UDY115upth1RRI5pY=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MDk5OTk4MjUyNjgsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjA5OTk5ODI1LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjA5OTk5ODI1MjY4LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYwOTk5ODAyNX0.sKkJ_YFDGVJF8r6A1VgjSLAakFpo9wm59eGqF6-Zn2hAeOb7naMGqLUumpvV_CdFVz1H86mz8PKInl1zNvAQbw","tokenExpires":1609999825268,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 13:40:25,996 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 13:40:25,997 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 13:40:26,010 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 13:40:26,011 INFO  [log] ====================================================================== 
+2021-01-07 13:40:26,016 INFO  [log] ====================================================================== 
+2021-01-07 13:40:26,016 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 13:40:26,018 INFO  [log] 开始发送post请求... 
+2021-01-07 13:40:26,018 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 13:40:26,019 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 13:40:26,051 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 13:40:26,052 INFO  [log] 获得response为 --> {"success":0,"errorCode":"8520003","message":"sessionId有误,无权访问","statusCode":200} 
+2021-01-07 13:40:26,079 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 13:40:26,079 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 13:40:26,079 INFO  [log] ====================================================================== 
+2021-01-07 13:40:26,081 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 13:40:26,081 INFO  [log] ====================================================================== 
+2021-01-07 14:39:29,752 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 14:39:29,752 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 14:39:29,755 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 14:39:29,793 INFO  [log] ====================================================================== 
+2021-01-07 14:39:29,793 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 14:39:30,078 INFO  [log] 开始发送post请求... 
+2021-01-07 14:39:30,078 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 14:39:30,078 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 14:39:30,318 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 14:39:30,432 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"QKxEKN+FiG4R05ORER0ziXQRpl6Fhpb7dpJJ1yqZumCtkT2wW0qtP6GdQ6LOg+J23DrB3XJnYtU57LgD+hAgIw4D34j+ZdBNk1j8lsM9vRsmSLMkHPJ5od7h1hsP8N07ZEni7kh3oWP/FDiAV7WkBb4eIS7KmUb5i3h/hu8JroY=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MTAwMDMzNjk3NzMsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjEwMDAzMzY5LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjEwMDAzMzY5NzczLFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYxMDAwMTU2OX0.rIH-pl9E_ZfWMT15rrQnlo8NGwV_EDxkm_gIck-aZdGRbBipcWJq4I7Pzp48Bw7v8dQJYPSBCGykgLTlE3RbMQ","tokenExpires":1610003369773,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 14:39:30,490 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 14:39:30,491 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 14:39:30,504 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 14:39:30,504 INFO  [log] ====================================================================== 
+2021-01-07 14:39:30,510 INFO  [log] ====================================================================== 
+2021-01-07 14:39:30,510 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 14:39:30,516 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 14:39:30,516 INFO  [log] ====================================================================== 
+2021-01-07 14:40:27,743 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 14:40:27,744 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 14:40:27,746 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 14:40:27,787 INFO  [log] ====================================================================== 
+2021-01-07 14:40:27,787 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 14:40:28,067 INFO  [log] 开始发送post请求... 
+2021-01-07 14:40:28,067 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 14:40:28,067 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 14:40:28,335 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 14:40:28,443 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"ic8ioUWnPXm0NRcY3j5TmjfL2fgRXNaZXaPe75afSuhXeQK3OO/hqpk1Hzy27WIZFGzDLOo7J5v3khvAeqOdI2G75VauwH0SujSwN1yDbnNhyV8q3EdXsifzW4wQrviU0WwZvgecWA9F0Kzt9fyyBoEzQHcPI+SvHkK8nPnVg2c=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-28","source":0,"userName":"向球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MTAwMDM0Mjc3NjgsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjEwMDAzNDI3LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjEwMDAzNDI3NzY4LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYxMDAwMTYyN30.IwQx2ufqXgBMNSTcpY6zr00-NmH9daFr3_cof2VgY8X9jH1eI7XwpFjcZKvm2Io2_ilFD-SdZB4e0uGCUG7ttQ","tokenExpires":1610003427768,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 14:40:28,498 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 14:40:28,498 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 14:40:28,512 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 14:40:28,512 INFO  [log] ====================================================================== 
+2021-01-07 14:40:28,517 INFO  [log] ====================================================================== 
+2021-01-07 14:40:28,517 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 14:40:28,520 INFO  [log] 开始发送post请求... 
+2021-01-07 14:40:28,520 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 14:40:28,520 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 14:40:28,638 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 14:40:28,639 INFO  [log] 获得response为 --> {"success":1,"statusCode":200} 
+2021-01-07 14:40:28,650 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 14:40:28,651 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 14:40:28,651 INFO  [log] ====================================================================== 
+2021-01-07 14:40:28,652 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 14:40:28,652 INFO  [log] ====================================================================== 
+2021-01-07 14:41:58,230 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 14:41:58,231 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 14:41:58,233 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 14:41:58,269 INFO  [log] ====================================================================== 
+2021-01-07 14:41:58,269 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 14:41:58,548 INFO  [log] 开始发送post请求... 
+2021-01-07 14:41:58,548 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 14:41:58,548 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 14:41:59,530 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 14:41:59,640 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"NO398lb0tlqXSiNozsx73O4bfWvcZRQ6NsByukXpxfYI1IlzpRRpk2taZf0pbDVQdZV3Ne3zcmIRGmVHQbypVAbSwnfstzR/NAlPp0TgkE+KN5364Ybt1PgFiHa5e5XgZ+RY0fP7vjF5QuFWChsmtx5JZj5VGZXO7ktRO7s1IvM=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-27T16:00:00.000+0000","source":0,"userName":"??","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MTAwMDM1MTg4OTAsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjEwMDAzNTE4LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjEwMDAzNTE4ODkwLFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYxMDAwMTcxOH0.AIftGixjnQpI6XPUtQXS77Eyfs4IIaxKvASwUzMsHsVhm0YjiWFrilXph1hqzBuiEpngAi4S5Zs3DefXvGehUA","tokenExpires":1610003518890,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 14:41:59,697 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 14:41:59,698 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 14:41:59,710 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 14:41:59,710 INFO  [log] ====================================================================== 
+2021-01-07 14:41:59,712 INFO  [log] ====================================================================== 
+2021-01-07 14:41:59,712 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 14:41:59,714 INFO  [log] 开始发送post请求... 
+2021-01-07 14:41:59,715 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 14:41:59,715 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 14:41:59,932 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 14:41:59,932 INFO  [log] 获得response为 --> {"success":1,"statusCode":200} 
+2021-01-07 14:41:59,944 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 14:41:59,944 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 14:41:59,944 INFO  [log] ====================================================================== 
+2021-01-07 14:41:59,945 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 14:41:59,945 INFO  [log] ====================================================================== 
+2021-01-07 14:43:04,938 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 14:43:04,939 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 14:43:04,942 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 14:43:04,981 INFO  [log] ====================================================================== 
+2021-01-07 14:43:04,981 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 14:43:05,253 INFO  [log] 开始发送post请求... 
+2021-01-07 14:43:05,253 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 14:43:05,253 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 14:43:05,553 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 14:43:05,675 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"bU6JbeK8atVdK/v59/JJPn5CT/FHhPGOwQIn7OmBq6KR5jJijxX77X40LBX6A1tvl47TUGoAJgdnq6I044I1gsjzt5PzxLJYVY8arqeZRomzS9dwcU6/j9pCiqXx9Mmr3ABTGqKumKUNAwt22yAYM3aE5ShOQS6tPR/65a1Rja8=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-27T16:00:00.000+0000","source":0,"userName":"??","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MTAwMDM1ODQ5NzUsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjEwMDAzNTg0LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjEwMDAzNTg0OTc1LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYxMDAwMTc4NH0.Hus9FWZZFAggwmaFi8gYb_5lGTK11cI7DnAq676ccHKJCdsHJAFrZZh4wM6dUSoqgjf4JpyOuYmAalO2PDm3EA","tokenExpires":1610003584975,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 14:43:05,731 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 14:43:05,732 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 14:43:05,744 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 14:43:05,745 INFO  [log] ====================================================================== 
+2021-01-07 14:43:05,747 INFO  [log] ====================================================================== 
+2021-01-07 14:43:05,747 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 14:43:05,749 INFO  [log] 开始发送post请求... 
+2021-01-07 14:43:05,749 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 14:43:05,749 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 14:43:05,893 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 14:43:05,893 INFO  [log] 获得response为 --> {"success":1,"statusCode":200} 
+2021-01-07 14:43:05,905 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 14:43:05,905 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 14:43:05,905 INFO  [log] ====================================================================== 
+2021-01-07 14:43:05,906 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 14:43:05,906 INFO  [log] ====================================================================== 
+2021-01-07 15:32:17,559 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 15:32:17,559 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 15:32:17,561 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 15:32:17,615 INFO  [log] ====================================================================== 
+2021-01-07 15:32:17,616 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 15:32:17,625 INFO  [log] ====================================================================== 
+2021-01-07 15:32:17,625 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 15:32:17,976 INFO  [log] 开始发送post请求... 
+2021-01-07 15:32:17,976 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 15:32:17,976 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 15:32:18,166 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:32:18,178 INFO  [log] 获得response为 --> {"success":0,"errorCode":"8520002","message":"token超时/异常","statusCode":200} 
+2021-01-07 15:32:18,180 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:32:18,181 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 15:32:18,181 INFO  [log] ====================================================================== 
+2021-01-07 15:32:18,182 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 15:32:18,182 INFO  [log] ====================================================================== 
+2021-01-07 15:32:49,366 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 15:32:49,366 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 15:32:49,369 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 15:32:49,405 INFO  [log] ====================================================================== 
+2021-01-07 15:32:49,405 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 15:32:49,688 INFO  [log] 开始发送post请求... 
+2021-01-07 15:32:49,688 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 15:32:49,688 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 15:32:49,927 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:32:50,039 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"YJJAokMiZ51vwBHgUYYZcUe8m+uZZGABou+d1mzOmlY0KesL0dNeDbbDdHA6YQoeY1vzukJnUJcw4vYqx3lgSirzb94dnLjjLORKuRSnZS2auyCAWMuTPncO/vQMp29PQp34ilJYYj8LHh0adZfB5wtJDcsmOIbXIT6ZfSXmqhc=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2018-04-30T16:00:00.000+0000","source":0,"userName":"球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MTAwMDY1NjkzNTksXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjEwMDA2NTY5LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjEwMDA2NTY5MzU5LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYxMDAwNDc2OX0.xHqgfVj0zkhqRF_0XnLit-AYHDLq7eK1PD2DjvnpqAFCVUSvMc9utUPIe69Q6wQ8dcC5kZ0WwCiyNqvOkYFKyg","tokenExpires":1610006569359,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 15:32:50,042 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:32:50,042 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 15:32:50,043 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 15:32:50,043 INFO  [log] ====================================================================== 
+2021-01-07 15:32:50,046 INFO  [log] ====================================================================== 
+2021-01-07 15:32:50,046 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 15:32:50,049 INFO  [log] 开始发送post请求... 
+2021-01-07 15:32:50,049 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 15:32:50,049 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 15:32:50,084 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:32:50,085 INFO  [log] 获得response为 --> {"success":0,"errorCode":"8520003","message":"sessionId有误,无权访问","statusCode":200} 
+2021-01-07 15:32:50,086 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:32:50,086 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 15:32:50,086 INFO  [log] ====================================================================== 
+2021-01-07 15:32:50,087 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 15:32:50,087 INFO  [log] ====================================================================== 
+2021-01-07 15:33:12,542 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 15:33:12,542 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 15:33:12,544 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 15:33:12,579 INFO  [log] ====================================================================== 
+2021-01-07 15:33:12,579 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 15:33:12,873 INFO  [log] 开始发送post请求... 
+2021-01-07 15:33:12,873 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 15:33:12,873 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 15:33:13,112 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:33:13,216 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"VjUyF51FFkieeWYPCdTu6Rmx0W6P8TNhu0GKFr7LGlcRpQRartAyg1PnDIHLdgtHJdQLGaKMXMnaA6p4SpsYHUSUbnSSeGN2rrq9LMmSAY0+JaINwbLjxjoYk9oCnCPUAYaHku51C7g8zIY2klrB+On1Tc3YuQ/12NYj2fvRzA4=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2018-04-30T16:00:00.000+0000","source":0,"userName":"球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MTAwMDY1OTI1NDMsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjEwMDA2NTkyLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjEwMDA2NTkyNTQzLFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYxMDAwNDc5Mn0.kDGVL3bQ-SK0AQe3k0rWupI095Bd6dgtodJhM9cHk2V9ds1wguyhjg00beehiACJbkZOc7ZATZgFBB3mDuwVeQ","tokenExpires":1610006592543,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 15:33:13,273 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:33:13,273 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 15:33:13,286 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 15:33:13,286 INFO  [log] ====================================================================== 
+2021-01-07 15:33:13,292 INFO  [log] ====================================================================== 
+2021-01-07 15:33:13,292 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 15:33:13,295 INFO  [log] 开始发送post请求... 
+2021-01-07 15:33:13,295 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 15:33:13,295 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 15:33:13,323 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:33:13,323 INFO  [log] 获得response为 --> {"success":0,"errorCode":"8520003","message":"sessionId有误,无权访问","statusCode":200} 
+2021-01-07 15:33:13,336 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:33:13,336 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 15:33:13,336 INFO  [log] ====================================================================== 
+2021-01-07 15:33:13,337 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 15:33:13,337 INFO  [log] ====================================================================== 
+2021-01-07 15:34:33,360 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 15:34:33,360 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 15:34:33,362 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 15:34:33,399 INFO  [log] ====================================================================== 
+2021-01-07 15:34:33,399 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 15:34:33,681 INFO  [log] 开始发送post请求... 
+2021-01-07 15:34:33,681 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 15:34:33,681 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 15:34:33,933 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:34:34,051 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"lxx4zwFv9dX00JiJHptm/wj8/FiJ5O2E9tLKXHBQjnjMahUojTZMPqRulk8kf1KJmDPqumaraR/wrDFq+l41J22EctGilZH1+LVwAGde8RrXwvjCpSLa6uAVsxgdtxXgQjahTlB97aedhbkfJ+v+Kh1EI0TCH+HkcQm+NAZ0s+Q=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2018-04-30T16:00:00.000+0000","source":0,"userName":"球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MTAwMDY2NzMzNTQsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjEwMDA2NjczLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjEwMDA2NjczMzU0LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYxMDAwNDg3M30.LboE-EqZO8Als4EqWEAQHAEEg2I_9NLolcwsLj_1Gwr8W2usbyiqVsqTXTMJRMMobfo5jU-C_tDxEmcHxGGk0A","tokenExpires":1610006673354,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 15:34:34,109 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:34:34,109 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 15:34:34,123 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 15:34:34,123 INFO  [log] ====================================================================== 
+2021-01-07 15:34:34,128 INFO  [log] ====================================================================== 
+2021-01-07 15:34:34,128 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 15:34:34,132 INFO  [log] 开始发送post请求... 
+2021-01-07 15:34:34,132 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 15:34:34,132 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 15:34:34,166 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:34:34,166 INFO  [log] 获得response为 --> {"success":0,"errorCode":"8520003","message":"sessionId有误,无权访问","statusCode":200} 
+2021-01-07 15:34:34,180 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:34:34,180 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 15:34:34,180 INFO  [log] ====================================================================== 
+2021-01-07 15:34:34,182 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 15:34:34,182 INFO  [log] ====================================================================== 
+2021-01-07 15:35:58,962 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 15:35:58,963 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 15:35:58,965 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 15:35:59,006 INFO  [log] ====================================================================== 
+2021-01-07 15:35:59,006 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 15:35:59,423 INFO  [log] 开始发送post请求... 
+2021-01-07 15:35:59,423 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 15:35:59,423 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 15:35:59,697 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:35:59,856 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"SrNmqXc7fR7hM0VHCxHqbT/eQGro+IGdtUSdTFmprSh8GQoqZHFEZU5LHB8U86wukT4MDB3dVgWTrtItR/B6xvNowepxde/ubcHUNrkusmH1gnjDJf250fZT/OLW9oJh8o/vML/aL3XnPha1VLmdhUK7pOw+k0Cc3p7MxK6iC9Q=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2018-04-30T16:00:00.000+0000","source":0,"userName":"球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MTAwMDY3NTkxMDIsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjEwMDA2NzU5LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjEwMDA2NzU5MTAyLFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYxMDAwNDk1OX0.W7OVLgORQRJiLcpFIqYdACvTsLxH1mssNP1ahclcHIeEdQUUGWYNfZk33lU4GTh3VHciqlBHrCVWeho4vAgSdA","tokenExpires":1610006759102,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 15:35:59,911 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:35:59,912 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 15:35:59,926 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 15:35:59,926 INFO  [log] ====================================================================== 
+2021-01-07 15:35:59,931 INFO  [log] ====================================================================== 
+2021-01-07 15:35:59,932 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 15:35:59,935 INFO  [log] 开始发送post请求... 
+2021-01-07 15:35:59,935 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 15:35:59,935 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 15:35:59,967 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:35:59,967 INFO  [log] 获得response为 --> {"success":0,"errorCode":"8520003","message":"sessionId有误,无权访问","statusCode":200} 
+2021-01-07 15:35:59,979 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:35:59,979 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 15:35:59,979 INFO  [log] ====================================================================== 
+2021-01-07 15:35:59,980 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 15:35:59,980 INFO  [log] ====================================================================== 
+2021-01-07 15:36:22,045 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 15:36:22,045 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 15:36:22,047 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 15:36:22,086 INFO  [log] ====================================================================== 
+2021-01-07 15:36:22,086 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 15:36:22,397 INFO  [log] 开始发送post请求... 
+2021-01-07 15:36:22,397 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 15:36:22,397 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 15:36:22,656 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:36:22,777 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"V9mjGAYsIB0nwpFoPxXw+d66HBbzdywqi23I/Nl2/xJWPjRdEiUxYO4nQKJMMiGfh1y0w4y+2I4E3N5efhaRdqoUeDhMULEx4wT7LJhWCdGV2LrD1aFq4P8+gWL1Qj7+GlQ9s5RsMAbtuQ3zoWNyr0sfB0IdsY3P9vOAlEJNin8=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2018-04-30T16:00:00.000+0000","source":0,"userName":"球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MTAwMDY3ODIwODMsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjEwMDA2NzgyLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjEwMDA2NzgyMDgzLFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYxMDAwNDk4Mn0.Am9sRc06P3PHZ9K8lv4H4nHLpJkhr681A-xtgxRu_Cd8upFSs31Ff1I8T-PSmto1oD4RvgExi_10q8lnlzZ9_Q","tokenExpires":1610006782083,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 15:36:22,842 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:36:29,087 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 15:36:37,037 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 15:36:37,037 INFO  [log] ====================================================================== 
+2021-01-07 15:46:16,109 INFO  [log] ====================================================================== 
+2021-01-07 15:46:16,109 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 15:46:16,113 INFO  [log] 开始发送post请求... 
+2021-01-07 15:46:16,114 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 15:46:16,115 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 15:46:16,163 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:46:16,163 INFO  [log] 获得response为 --> {"success":0,"errorCode":"8520003","message":"sessionId有误,无权访问","statusCode":200} 
+2021-01-07 15:46:16,177 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:47:16,444 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 15:47:16,444 INFO  [log] ====================================================================== 
+2021-01-07 15:47:16,446 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 15:47:16,446 INFO  [log] ====================================================================== 
+2021-01-07 15:48:13,686 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 15:48:13,687 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 15:48:13,689 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 15:48:13,726 INFO  [log] ====================================================================== 
+2021-01-07 15:48:13,726 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 15:48:14,007 INFO  [log] 开始发送post请求... 
+2021-01-07 15:48:14,008 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 15:48:14,008 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 15:48:14,261 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:48:14,370 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"W83g2mUZUTkbhfI57F5P5GzVIJLwzsLklfJ7ul6/f6o5b0LZ92V8PyWB1zgxeYgfEEQ8CF+z/B/KDbEBTNU8ti/8l2j+HAA7akqrur0l42E8Gq3X6Ndco+KB/YLNXBmY2v9fgI872D26q4cvh5XPl2gaRo0yvmCR6CpmsadH3Gs=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2018-04-30T16:00:00.000+0000","source":0,"userName":"球球","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MTAwMDc0OTM2ODUsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjEwMDA3NDkzLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjEwMDA3NDkzNjg1LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYxMDAwNTY5M30.hWCt2qbAt1u7iQLQwjuP8Bh77xcHWKnTT9vnZlcsC6IfNeC1gXquPnNh6Zk_3oGO2NysVNjgG8vZ44bUiv0cFg","tokenExpires":1610007493685,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 15:48:14,427 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:48:14,428 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 15:48:14,442 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 15:48:14,442 INFO  [log] ====================================================================== 
+2021-01-07 15:48:14,448 INFO  [log] ====================================================================== 
+2021-01-07 15:48:14,448 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 15:48:14,450 INFO  [log] 开始发送post请求... 
+2021-01-07 15:48:14,450 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 15:48:14,450 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 15:48:14,586 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:48:14,587 INFO  [log] 获得response为 --> {"success":1,"statusCode":200} 
+2021-01-07 15:48:14,611 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:48:14,611 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 15:48:14,611 INFO  [log] ====================================================================== 
+2021-01-07 15:48:14,613 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 15:48:14,613 INFO  [log] ====================================================================== 
+2021-01-07 15:48:44,836 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 15:48:44,836 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 15:48:44,839 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 15:48:44,882 INFO  [log] ====================================================================== 
+2021-01-07 15:48:44,882 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 15:48:45,191 INFO  [log] 开始发送post请求... 
+2021-01-07 15:48:45,191 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 15:48:45,191 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 15:48:45,473 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:48:45,598 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"Rgw5ixq8TqxJ38rKzvLx5pr8xqnUCyiOj5j2rBJ4gxaH7kI9R7XhPaSC5Tj3ZqFIS1ZYDw0xbc1i93pnEXvgEQJesseE+Qw5jj7R8B8grR4gynkXmP5ndBJ4WjiwxLtGhiTsS2qbHEureP8IXpCpqUOEErjLE5pjLiNgVA/hj8U=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-27T16:00:00.000+0000","source":0,"userName":"??","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MTAwMDc1MjQ4OTIsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjEwMDA3NTI0LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjEwMDA3NTI0ODkyLFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYxMDAwNTcyNH0.oLlbxN4WGu5reunSd7vCSX5rgm-DIqN4JBFl8U0wVqwh1gvbYogYXmjQdwzTLhhciUKXQeHfFnDmHxu_xbZ75Q","tokenExpires":1610007524892,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 15:48:45,674 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:48:46,565 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 15:48:46,582 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 15:48:46,582 INFO  [log] ====================================================================== 
+2021-01-07 15:48:46,588 INFO  [log] ====================================================================== 
+2021-01-07 15:48:46,588 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 15:48:46,591 INFO  [log] 开始发送post请求... 
+2021-01-07 15:48:46,591 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 15:48:46,591 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 15:48:46,714 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:48:46,714 INFO  [log] 获得response为 --> {"success":1,"statusCode":200} 
+2021-01-07 15:48:46,727 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:49:13,615 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 15:49:13,615 INFO  [log] ====================================================================== 
+2021-01-07 15:49:13,617 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 15:49:13,617 INFO  [log] ====================================================================== 
+2021-01-07 15:49:20,690 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 15:49:20,690 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 15:49:20,693 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 15:49:20,733 INFO  [log] ====================================================================== 
+2021-01-07 15:49:20,733 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 15:49:21,054 INFO  [log] 开始发送post请求... 
+2021-01-07 15:49:21,054 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 15:49:21,054 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 15:49:21,323 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:49:21,438 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"gydGWYrmvE6ozAN5bbVWWhcl9NVnGP4zp4BhzmG1BfFMUAHn5k4+yp6wJlRIlYj3h6cpOiFvVwXSqengvHDs+G1eIc/ipUsv8pqUc72eprvTiWkPknxU0Wiluz9Mla9q68g1LR+qY8C7pkSHrF+S5VakU+zAMc+jx8Rl4fvfCQI=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-27T16:00:00.000+0000","source":0,"userName":"??","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MTAwMDc1NjA3MzksXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjEwMDA3NTYwLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjEwMDA3NTYwNzM5LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYxMDAwNTc2MH0.c_xgXhW1dwigicQ2vDpn-0AlPfrKvgV4IYKmkIiknYJiWQ7OzvWiHGav8n1C-lbzcYVNjVnooFsY8HuJLirxDg","tokenExpires":1610007560739,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 15:49:21,500 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:49:26,392 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 15:49:26,407 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 15:49:26,407 INFO  [log] ====================================================================== 
+2021-01-07 15:49:26,413 INFO  [log] ====================================================================== 
+2021-01-07 15:49:26,413 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 15:49:26,415 INFO  [log] 开始发送post请求... 
+2021-01-07 15:49:26,416 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 15:49:26,416 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 15:49:26,542 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:49:26,542 INFO  [log] 获得response为 --> {"success":1,"statusCode":200} 
+2021-01-07 15:49:26,555 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:50:17,737 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 15:50:17,738 INFO  [log] ====================================================================== 
+2021-01-07 15:50:17,739 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 15:50:17,739 INFO  [log] ====================================================================== 
+2021-01-07 15:51:39,487 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 15:51:39,487 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 15:51:39,490 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 15:51:39,532 INFO  [log] ====================================================================== 
+2021-01-07 15:51:39,532 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 15:51:39,864 INFO  [log] 开始发送post请求... 
+2021-01-07 15:51:39,864 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 15:51:39,864 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 15:51:40,126 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:51:40,249 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"d365hmKlpcio7Yaor0T1YldXKmYcSA/JVob+h+JRFxqK9mEisgWZJTF5IOG3tpK/PzMNLi7MR5OpdY3dkJ7EW9jbTbC5PY2K8GIH5jVIMp1fBtiAA6EnxXh5YVtJuEPS8+/lY7f5axrcljn8AkD82MlfJ9NWcy85X+OB2XqDAGM=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-27T16:00:00.000+0000","source":0,"userName":"??","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MTAwMDc2OTk1NDcsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjEwMDA3Njk5LCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjEwMDA3Njk5NTQ3LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYxMDAwNTg5OX0.D8vgsjfZo05BTtNZNOx-GmEfA_KVatXynATWZDu0lfzwk4lzp1xZw2uFD-jiNyT9ft08PwWoWAQn-s6AuOfGiw","tokenExpires":1610007699547,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 15:51:40,312 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:51:41,109 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 15:51:41,124 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 15:51:41,124 INFO  [log] ====================================================================== 
+2021-01-07 15:51:41,132 INFO  [log] ====================================================================== 
+2021-01-07 15:51:41,133 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 15:51:41,137 INFO  [log] 开始发送post请求... 
+2021-01-07 15:51:41,137 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 15:51:41,137 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 15:51:41,263 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:51:41,263 INFO  [log] 获得response为 --> {"success":1,"statusCode":200} 
+2021-01-07 15:51:41,275 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:51:56,831 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 15:51:56,831 INFO  [log] ====================================================================== 
+2021-01-07 15:51:56,833 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 15:51:56,833 INFO  [log] ====================================================================== 
+2021-01-07 15:53:11,403 INFO  [log] 使用Constant类中的常量，设定测试数据的文件路径：D:/GitHub/API_HttpClient/TestAPI_HttpClient/Excel/ApiCase.xlsx 
+2021-01-07 15:53:11,404 INFO  [log] 使用Constant类中的常量，设定测试数据的Sheet名称：Sheet1 
+2021-01-07 15:53:11,406 INFO  [log] 调用ExcelUtil类中的getTestData静态方法获取Excel中标记为yes的测试数据 
+2021-01-07 15:53:11,447 INFO  [log] ====================================================================== 
+2021-01-07 15:53:11,447 INFO  [log] *************     登录贝多盒 用例开始执行     ************* 
+2021-01-07 15:53:11,743 INFO  [log] 开始发送post请求... 
+2021-01-07 15:53:11,743 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/sso/accountLogin 
+2021-01-07 15:53:11,743 INFO  [log] 请求参数为：{
+ "sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774",
+ "userPasswd":"1111qqqq",
+ "userKey":"21383",
+ "platform":"control",
+ "tool":"2"
+} 
+2021-01-07 15:53:11,983 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:53:12,097 INFO  [log] 获得response为 --> {"resultValue":{"dangerNum":1,"passwordIsEmpty":1,"level":80,"loginKey":"nUPGEcCOenRy8Z7v3wk9W12A9h+UIsuIqV9uefM/Ed1GhAABB2Cx/k7zXLch39iu2PliWz1lrJc7m/61HrBqLBFJSN21BEOs6qxlPKI1qt+Bb+W75gj1OQ/qjneqPSHxuecZNv6+6AxnmMAncFijmwLD8dapgcqQqVu2Pi/6QxE=","userPhone":"13126668274","sysAccount":"21383","sessionId":"1B0CC1CA-CB54-4E8A-8255-D0B2B9D5E774","userBirth":"2020-05-27T16:00:00.000+0000","source":0,"userName":"??","userCode":"jeejio_11384","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ7XCJleHBpcmVzRGF0ZVwiOjE2MTAwMDc3OTE0MDYsXCJwbGF0Zm9ybVwiOlwiY29udHJvbFwiLFwic2Vzc2lvbklkXCI6XCIxQjBDQzFDQS1DQjU0LTRFOEEtODI1NS1EMEIyQjlENUU3NzRcIixcInRva2VuU2NlbmVcIjpcIlVTRVJfTE9HSU5cIixcInRvb2xcIjpcIjJcIixcInVzZXJJZFwiOjIwMjAwNTI4MTQyMjR9IiwiZXhwIjoxNjEwMDA3NzkxLCJ1c2VyIjoie1wiZXhwaXJlc0RhdGVcIjoxNjEwMDA3NzkxNDA2LFwicGxhdGZvcm1cIjpcImNvbnRyb2xcIixcInNlc3Npb25JZFwiOlwiMUIwQ0MxQ0EtQ0I1NC00RThBLTgyNTUtRDBCMkI5RDVFNzc0XCIsXCJ0b2tlblNjZW5lXCI6XCJVU0VSX0xPR0lOXCIsXCJ0b29sXCI6XCIyXCIsXCJ1c2VySWRcIjoyMDIwMDUyODE0MjI0fSIsImlhdCI6MTYxMDAwNTk5MX0.Ts3ib32WdsjP4Fra_QD5q30a1ciQ4vnjsNlC3B7AcRM85E1bbg2Lqviy4WbcdnvbxOJUMmixNSgQ6w6DfPz3dQ","tokenExpires":1610007791406,"imgUrl":"https://qauserimgs.jeejio.com/qa/2020052814224/userinfo/2020-11-24/56acf782058e4e36907e295bec89f977.jpg","userPasswd":"1","phone":"f","userEmail":"13126668274@163.com","id":2020052814224,"email":"f","account":"t","status":1},"success":1,"statusCode":200} 
+2021-01-07 15:53:12,152 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:53:12,153 INFO  [log] 响应数据验证成功！期望：resultValue/sysAccount=21383 --> 实际：21383 
+2021-01-07 15:53:12,165 INFO  [log] *************     登录贝多盒 用例执行结束     ************* 
+2021-01-07 15:53:12,166 INFO  [log] ====================================================================== 
+2021-01-07 15:53:12,171 INFO  [log] ====================================================================== 
+2021-01-07 15:53:12,171 INFO  [log] *************     修改个人信息 用例开始执行     ************* 
+2021-01-07 15:53:12,173 INFO  [log] 开始发送post请求... 
+2021-01-07 15:53:12,173 INFO  [log] 请求地址为：https://jeejiouser.qajeejio.com/user/person/changeUserInfoControl 
+2021-01-07 15:53:12,173 INFO  [log] 请求参数为：{
+ "imgUrl": "https:\/\/qauserimgs.jeejio.com\/qa\/2020052814224\/userinfo\/2020-11-24\/56acf782058e4e36907e295bec89f977.jpg",
+ "userName": "球球",
+ "status": 1,
+ "userId": "2020052814224",
+ "userBirth": "2020-05-28"
+} 
+2021-01-07 15:53:12,300 INFO  [log] 发送请求成功！开始得到响应对象... 
+2021-01-07 15:53:12,301 INFO  [log] 获得response为 --> {"success":1,"statusCode":200} 
+2021-01-07 15:53:12,313 INFO  [log] 解析，得到响应状态码:200 
+2021-01-07 15:53:12,325 INFO  [log] *************     修改个人信息 用例执行结束     ************* 
+2021-01-07 15:53:12,325 INFO  [log] ====================================================================== 
+2021-01-07 15:53:12,326 INFO  [log] *************     所有测试用例执行完成 用例执行结束     ************* 
+2021-01-07 15:53:12,326 INFO  [log] ====================================================================== 
