@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import fan.com.util.ExcelUtil;
 import fan.com.util.GetResponseData;
-import fan.com.util.ResponseData;
 import fan.com.util.log;
 import org.apache.http.client.methods.*;
 import org.apache.http.entity.StringEntity;
@@ -17,21 +16,24 @@ import java.util.Map;
 
 
 public class RestClient {
-
+    //写入header
     public HashMap<String ,String> setHeader(String headers, String relyOn, String relyReturn){
         HashMap<String ,String> postHeader = null;
+        HashMap<String, String> response = GetResponse.getResponse(relyOn, relyReturn);
+        //判断header不为空
         if (!headers.equals("null")){
             postHeader = new HashMap<String, String>();
-            String[] split = headers.split("\\n");
-            for (String s1 : split) {
-                String[] split1 = s1.split("=");
-                if (split1[1].contains("'") || split1[1].contains("'") && !"null".equals(relyOn) && !"null".equals(relyReturn)){
-                    String cellData = ExcelUtil.getCellData(Double.valueOf(relyOn).intValue(), ExcelUtil.getLastColumnNum() - 5);
-                    JSONObject jsonObject = JSON.parseObject(cellData);
-                    String valueByJPath = GetResponseData.getValueByJPath(jsonObject, relyReturn);
-                    split1[1] = valueByJPath;
+            //分割有几个header
+            String[] getHeader = headers.split("\\n");
+            //遍历每一个header
+            for (String s1 : getHeader) {
+                //将每一个header根据=分割
+                String[] header = s1.split("=");
+                if (header[1].contains("'") || header[1].contains("'")){
+                    String[] split = header[1].split("'");
+                    header[1] = response.get(split[1]);
                 }
-                postHeader.put(split1[0], split1[1]);
+                postHeader.put(header[0], header[1]);
             }
         }
         return postHeader;
@@ -64,6 +66,7 @@ public class RestClient {
         }
         //执行请求,相当于postman上点击发送按钮，然后赋值给HttpResponse对象接收
         log.info("开始发送带请求头的get请求...");
+        log.info("请求地址为：" + url);
         CloseableHttpResponse httpResponse = httpclient.execute(httpget);
         log.info("发送请求成功！开始得到响应对象...");
         return httpResponse;
@@ -76,7 +79,7 @@ public class RestClient {
         //创建一个HttpPost的请求对象
         HttpPost httppost = new HttpPost(url);
         //设置payload
-        httppost.setEntity(new StringEntity(entityString));
+        httppost.setEntity(new StringEntity(entityString, "utf-8"));
         //加载请求头到httppost对象
         if (headerMap != null){
             for(Map.Entry<String, String> entry : headerMap.entrySet()) {
@@ -97,7 +100,7 @@ public class RestClient {
 
         CloseableHttpClient httpclient = HttpClients.createDefault();
         HttpPut httpput = new HttpPut(url);
-        httpput.setEntity(new StringEntity(entityString));
+        httpput.setEntity(new StringEntity(entityString, "UTF-8"));
 
         for(Map.Entry<String, String> entry : headerMap.entrySet()) {
             httpput.addHeader(entry.getKey(), entry.getValue());

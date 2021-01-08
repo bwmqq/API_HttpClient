@@ -11,7 +11,7 @@
             </class>
         </classes>
     </test>
-    <!--<listeners>
+    <listeners>
         <listener class-name="fan.com.report.ExtentTestNGReporterListener"></listener>
-    </listeners>-->
+    </listeners>
 </suite>

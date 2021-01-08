@@ -2,6 +2,7 @@ package fan.com.test;
 
 import com.alibaba.fastjson.JSONObject;
 import fan.com.restClient.AssertClient;
+import fan.com.restClient.GetResponse;
 import fan.com.restClient.RestClient;
 import fan.com.util.*;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -49,6 +50,7 @@ public class TestApiCase {
                 CloseableHttpResponse cHttpResponse = restClient.get(method + "://" + domainName + address, stringStringHashMap);
                 AssertClient.AssertClient(cHttpResponse, Tid, result);
             }else if ("post".equals(type)){
+                parameter = GetResponse.setParameter(parameter, relyOn, relyReturn);
                 CloseableHttpResponse cHttpResponse = restClient.post(method + "://" + domainName + address, parameter, stringStringHashMap);
                 AssertClient.AssertClient(cHttpResponse, Tid, result);
             }
