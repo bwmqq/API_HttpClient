@@ -1,4 +1,4 @@
-package fan.com.util;
+package fan.com.base;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
@@ -12,9 +12,10 @@ public class GetResponseData {
      * @return，返回first_name这个json对象名称对应的值
      */
     //1 json解析方法
-    //验证数据返回信息
-    public static String getValueByJPath(JSONObject responseJson, String jPath){
-        Object obj = responseJson;
+    //获取需要验证数据返回信息
+    public static String getValueByJPath(JSONObject responseJson, String jPath) throws Exception{
+        Object obj = null;
+        obj = responseJson;
         for(String s : jPath.split("/")) {
             if(!s.isEmpty()) {
                 if(!(s.contains("[") || s.contains("]"))) {

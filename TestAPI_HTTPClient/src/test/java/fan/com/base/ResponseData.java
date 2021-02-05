@@ -1,7 +1,9 @@
-package fan.com.util;
+package fan.com.base;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import fan.com.base.GetResponseData;
+import fan.com.util.log;
 import org.apache.http.Header;
 import org.apache.http.ParseException;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -50,11 +52,10 @@ public class ResponseData {
      */
     public static int getStatusCode (CloseableHttpResponse response) {
         int statusCode = response.getStatusLine().getStatusCode();
-        log.info("解析，得到响应状态码:"+ statusCode);
         return statusCode;
     }
 
-    public static int getStatusSuccess(JSONObject responseJson) {
+    public static int getStatusSuccess(JSONObject responseJson) throws Exception {
         int success = Integer.parseInt(GetResponseData.getValueByJPath(responseJson, "success"));
         return success;
     }

@@ -31,6 +31,7 @@ public class ExcelUtil {
             excelWSheet = excelWBook.getSheet(sheetName);
         } catch (Exception e) {
             e.printStackTrace();
+            log.error("用例执行错误，操作excel文件sheet异常 --> " + e);
         }
     }
     
@@ -44,6 +45,7 @@ public class ExcelUtil {
             String cellData = cell.getStringCellValue();
             return cellData;    
         } catch (Exception e) {
+            log.error("用例执行错误，未获取到依赖数据 --> " + e);
             return "";
         }
     }
@@ -85,6 +87,7 @@ public class ExcelUtil {
             out.close();
         } catch (Exception e) {
             e.printStackTrace();
+            log.error("用例执行错误，写入结果异常 --> " + e);
         }
     }
 

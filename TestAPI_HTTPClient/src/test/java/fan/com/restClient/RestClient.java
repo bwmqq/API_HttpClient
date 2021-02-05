@@ -1,9 +1,7 @@
 package fan.com.restClient;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-import fan.com.util.ExcelUtil;
-import fan.com.util.GetResponseData;
+import fan.com.base.GetResponse;
+import fan.com.util.GetDescUtil;
 import fan.com.util.log;
 import org.apache.http.client.methods.*;
 import org.apache.http.entity.StringEntity;
@@ -13,16 +11,23 @@ import org.apache.http.impl.client.HttpClients;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-
+import java.util.Set;
 
 public class RestClient {
     //写入header
-    public HashMap<String ,String> setHeader(String headers, String relyOn, String relyReturn){
-        HashMap<String ,String> postHeader = null;
-        HashMap<String, String> response = GetResponse.getResponse(relyOn, relyReturn);
+    public Map<String ,String> setHeader(String headers, String relyOn, String relyReturn, String cookieFile) throws Exception {
+        Map<String ,String> postHeader = new HashMap<String, String>();
+        Map<String, String> response = GetResponse.getResponse(relyOn, relyReturn);
         //判断header不为空
+        boolean contains = headers.contains("Content-Type");
+        if (!contains){
+            postHeader.put("Content-Type", "application/json;charset=utf-8");
+        }
+        Map<String, String> propertiesSql = GetDescUtil.getProperties(cookieFile);
+        for (Map.Entry<String, String> entry : propertiesSql.entrySet()) {
+            postHeader.put(entry.getKey(), entry.getValue());
+        }
         if (!headers.equals("null")){
-            postHeader = new HashMap<String, String>();
             //分割有几个header
             String[] getHeader = headers.split("\\n");
             //遍历每一个header
@@ -53,7 +58,7 @@ public class RestClient {
     }
 
     //2. Get 请求方法（带请求头信息）
-    public CloseableHttpResponse get(String url, HashMap<String,String> headerMap) throws IOException {
+    public CloseableHttpResponse get(String url, Map<String,String> headerMap) throws IOException {
         //创建一个可关闭的HttpClient对象
         CloseableHttpClient httpclient = HttpClients.createDefault();
         //创建一个HttpGet的请求对象
@@ -67,13 +72,19 @@ public class RestClient {
         //执行请求,相当于postman上点击发送按钮，然后赋值给HttpResponse对象接收
         log.info("开始发送带请求头的get请求...");
         log.info("请求地址为：" + url);
+        //通过keyset获取键 在通过HashMap.get(key)方法通过键获取值
+        log.info("请求头为：--> ");
+        Set<String> set= headerMap.keySet();
+        for (String string : set) {
+            log.info(headerMap.get(string));
+        }
         CloseableHttpResponse httpResponse = httpclient.execute(httpget);
         log.info("发送请求成功！开始得到响应对象...");
         return httpResponse;
     }
 
     //3. POST方法
-    public CloseableHttpResponse post(String url, String entityString, HashMap<String,String> headerMap) throws IOException {
+    public CloseableHttpResponse post(String url, String entityString, Map<String,String> headerMap) throws IOException {
         //创建一个可关闭的HttpClient对象
         CloseableHttpClient httpclient = HttpClients.createDefault();
         //创建一个HttpPost的请求对象
@@ -89,6 +100,12 @@ public class RestClient {
         //发送post请求
         log.info("开始发送post请求...");
         log.info("请求地址为：" + url);
+        log.info("请求头为：--> ");
+        //通过Map.entry()方法获取键值对
+        Set<Map.Entry<String, String>> entrySet = headerMap.entrySet();
+        for (Map.Entry<String, String> entry : entrySet) {
+            log.info("           " + entry.getKey() + "=" + entry.getValue());
+        }
         log.info("请求参数为：" + entityString);
         CloseableHttpResponse httpResponse = httpclient.execute(httppost);
         log.info("发送请求成功！开始得到响应对象...");

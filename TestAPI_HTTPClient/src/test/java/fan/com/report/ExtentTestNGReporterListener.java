@@ -41,7 +41,6 @@ public class ExtentTestNGReporterListener implements IReporter{
             //存在多个suite的情况下，在报告中将同一个一个suite的测试结果归为一类，创建一级节点。
             if(createSuiteNode){
                 suiteTest = extent.createTest(suite.getName()).assignCategory(suite.getName());
-
             }
             boolean createSuiteResultNode = false;
             if(result.size()>1){
@@ -91,9 +90,7 @@ public class ExtentTestNGReporterListener implements IReporter{
                     suiteTest.getModel().setStatus(Status.FAIL);
                 }
             }
-
         }
-
         extent.flush();
     }
 
@@ -106,7 +103,6 @@ public class ExtentTestNGReporterListener implements IReporter{
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
         htmlReporter.config().setDocumentTitle("api自动化测试报告");
         htmlReporter.config().setReportName("api自动化测试报告");
-
         htmlReporter.config().setChartVisibilityOnOpen(true);
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
         // htmlReporter.config().setTheme(Theme.STANDARD);
@@ -127,9 +123,7 @@ public class ExtentTestNGReporterListener implements IReporter{
                 categories[index] = categoryList.get(index).getName();
             }
         }
-
         ExtentTest test;
-
         if (tests.size() > 0) {
             //调整用例排序，按时间排序
             Set<ITestResult> treeSet = new TreeSet<ITestResult>(new Comparator<ITestResult>() {
@@ -150,7 +144,6 @@ public class ExtentTestNGReporterListener implements IReporter{
                 for(int i=0;i<parameters.length;i++){
                     name = parameters[0].toString();
                 }
-
                 if(name.length()>0){
                     if(name.length()>100){
                         name= name.substring(0,100)+"...";
@@ -168,7 +161,6 @@ public class ExtentTestNGReporterListener implements IReporter{
                 //test = extent.createTest(result.getMethod().getMethodName());
                 for (String group : result.getMethod().getGroups())
                     test.assignCategory(group);
-
                 List<String> outputList = Reporter.getOutput(result);
                 for(String output:outputList){
                     //将用例的log输出报告中
@@ -180,7 +172,6 @@ public class ExtentTestNGReporterListener implements IReporter{
                 else {
                     test.log(status, "Test " + status.toString().toLowerCase() + "ed");
                 }
-
                 test.getModel().setStartTime(getTime(result.getStartMillis()));
                 test.getModel().setEndTime(getTime(result.getEndMillis()));
             }

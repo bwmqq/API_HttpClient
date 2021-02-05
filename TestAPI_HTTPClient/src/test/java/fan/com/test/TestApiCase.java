@@ -1,17 +1,17 @@
 package fan.com.test;
 
-import com.alibaba.fastjson.JSONObject;
-import fan.com.restClient.AssertClient;
-import fan.com.restClient.GetResponse;
+import fan.com.base.AssertClient;
+import fan.com.base.GetResponse;
 import fan.com.restClient.RestClient;
 import fan.com.util.*;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import sun.rmi.runtime.Log;
 
 import java.io.IOException;
-import java.util.HashMap;
+import java.util.Map;
 
 public class TestApiCase {
 
@@ -41,30 +41,45 @@ public class TestApiCase {
     public void testEC1(String Tid, String CaseName, String method, String domainName, String address, String type,
                        String headers, String relyOn, String relyReturn, String relyField, String database,
                        String parameter, String results, String errorCode, String result,
-                       String sql) {
+                       String sql, String sqlResult) {
         log.startTestCase(CaseName);
         RestClient restClient = new RestClient();
-        HashMap<String, String> stringStringHashMap = restClient.setHeader(headers, relyOn, relyReturn);
         try {
+            //创建请求Header
+            Map<String, String> stringStringHashMap = restClient.setHeader(headers, relyOn, relyReturn, Constant.TestCookieFilePath);
+            //判断是get还是post
             if ("get".equals(type)){
+                address = GetResponse.setParameter(address, relyOn, relyReturn);
                 CloseableHttpResponse cHttpResponse = restClient.get(method + "://" + domainName + address, stringStringHashMap);
-                AssertClient.AssertClient(cHttpResponse, Tid, result);
+                AssertClient.AssertClient(cHttpResponse, Tid, result, Constant.TestSqlFilePath, database, sql, sqlResult);
+                if (!"null".equals(relyField)) {
+                    Map<String, String> response = GetResponse.getResponse(Tid, relyField);
+                    GetDescUtil.writePro(response, Constant.TestCookieFilePath);
+                }
             }else if ("post".equals(type)){
                 parameter = GetResponse.setParameter(parameter, relyOn, relyReturn);
                 CloseableHttpResponse cHttpResponse = restClient.post(method + "://" + domainName + address, parameter, stringStringHashMap);
-                AssertClient.AssertClient(cHttpResponse, Tid, result);
+                AssertClient.AssertClient(cHttpResponse, Tid, result, Constant.TestSqlFilePath, database, sql, sqlResult);
+                if (!"null".equals(relyField)) {
+                    Map<String, String> response = GetResponse.getResponse(Tid, relyField);
+                    GetDescUtil.writePro(response, Constant.TestCookieFilePath);
+                }
             }
         } catch (Exception e) {
             if (e.toString().equals("java.lang.NullPointerException")){
+                log.error("测试失败！！！ --> " + result + "未找到！");
                 ExcelUtil.setCellData(Integer.parseInt(Tid.split("[.]")[0]), ExcelUtil.getLastColumnNum(), "测试失败！！！ --> " + result + "未找到！");
             }else {
+                log.error("用例执行失败 --> " + e);
                 ExcelUtil.setCellData(Integer.parseInt(Tid.split("[.]")[0]), ExcelUtil.getLastColumnNum(), "测试失败！！！");
             }
             log.endTestCase(CaseName);
             Assert.fail(CaseName + " --> 测试用例执行失败！！！");
+
         }
         log.endTestCase(CaseName);
     }
+
     @AfterClass
     public void afterClass() {
         log.endTestCase("所有测试用例执行完成");

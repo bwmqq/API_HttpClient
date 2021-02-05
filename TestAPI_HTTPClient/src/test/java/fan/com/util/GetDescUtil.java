@@ -1,9 +1,7 @@
-package com.fan.util;
+package fan.com.util;
+
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
+import java.util.*;
 
 public class GetDescUtil {
     /**
@@ -26,5 +24,20 @@ public class GetDescUtil {
             map.put((String) entry.getKey(), (String) entry.getValue());
         }
         return map;
+    }
+
+    //写入内容
+    public static void writePro(Map<String, String> map, String cookieFile){
+        Properties pro = new Properties();
+        try {
+            FileOutputStream file = new FileOutputStream(cookieFile);
+            for (Map.Entry<String, String> entry : map.entrySet()) {
+                pro.setProperty(entry.getKey(), entry.getValue());
+            }
+            pro.store(file, "Cookie");
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 }
