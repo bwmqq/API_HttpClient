@@ -3,7 +3,7 @@ package fan.com.util;
 import java.io.*;
 import java.util.*;
 
-public class GetDescUtil {
+public class PropertiesUtil {
     /**
      * 获取properties文件中的内容,并返回map
      *

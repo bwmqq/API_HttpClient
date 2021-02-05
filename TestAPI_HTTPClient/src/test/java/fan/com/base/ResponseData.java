@@ -2,7 +2,6 @@ package fan.com.base;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import fan.com.base.GetResponseData;
 import fan.com.util.log;
 import org.apache.http.Header;
 import org.apache.http.ParseException;

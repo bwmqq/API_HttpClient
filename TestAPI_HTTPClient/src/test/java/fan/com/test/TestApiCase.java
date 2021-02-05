@@ -1,14 +1,13 @@
 package fan.com.test;
 
 import fan.com.base.AssertClient;
-import fan.com.base.GetResponse;
+import fan.com.base.SetRelyOnResponse;
 import fan.com.restClient.RestClient;
 import fan.com.util.*;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.Assert;
 import org.testng.annotations.*;
-import sun.rmi.runtime.Log;
 
 import java.io.IOException;
 import java.util.Map;
@@ -49,20 +48,20 @@ public class TestApiCase {
             Map<String, String> stringStringHashMap = restClient.setHeader(headers, relyOn, relyReturn, Constant.TestCookieFilePath);
             //判断是get还是post
             if ("get".equals(type)){
-                address = GetResponse.setParameter(address, relyOn, relyReturn);
+                address = SetRelyOnResponse.setParameter(address, relyOn, relyReturn);
                 CloseableHttpResponse cHttpResponse = restClient.get(method + "://" + domainName + address, stringStringHashMap);
                 AssertClient.AssertClient(cHttpResponse, Tid, result, Constant.TestSqlFilePath, database, sql, sqlResult);
                 if (!"null".equals(relyField)) {
-                    Map<String, String> response = GetResponse.getResponse(Tid, relyField);
-                    GetDescUtil.writePro(response, Constant.TestCookieFilePath);
+                    Map<String, String> response = SetRelyOnResponse.getResponse(Tid, relyField);
+                    PropertiesUtil.writePro(response, Constant.TestCookieFilePath);
                 }
             }else if ("post".equals(type)){
-                parameter = GetResponse.setParameter(parameter, relyOn, relyReturn);
+                parameter = SetRelyOnResponse.setParameter(parameter, relyOn, relyReturn);
                 CloseableHttpResponse cHttpResponse = restClient.post(method + "://" + domainName + address, parameter, stringStringHashMap);
                 AssertClient.AssertClient(cHttpResponse, Tid, result, Constant.TestSqlFilePath, database, sql, sqlResult);
                 if (!"null".equals(relyField)) {
-                    Map<String, String> response = GetResponse.getResponse(Tid, relyField);
-                    GetDescUtil.writePro(response, Constant.TestCookieFilePath);
+                    Map<String, String> response = SetRelyOnResponse.getResponse(Tid, relyField);
+                    PropertiesUtil.writePro(response, Constant.TestCookieFilePath);
                 }
             }
         } catch (Exception e) {

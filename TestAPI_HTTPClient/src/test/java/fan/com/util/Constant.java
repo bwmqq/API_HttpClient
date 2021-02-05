@@ -1,4 +1,5 @@
 package fan.com.util;
+
 //定义常量
 public class Constant {
 	//定义Excel测试数据文件的路径

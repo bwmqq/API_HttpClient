@@ -1,7 +1,7 @@
 package fan.com.restClient;
 
-import fan.com.base.GetResponse;
-import fan.com.util.GetDescUtil;
+import fan.com.base.SetRelyOnResponse;
+import fan.com.util.PropertiesUtil;
 import fan.com.util.log;
 import org.apache.http.client.methods.*;
 import org.apache.http.entity.StringEntity;
@@ -17,13 +17,13 @@ public class RestClient {
     //写入header
     public Map<String ,String> setHeader(String headers, String relyOn, String relyReturn, String cookieFile) throws Exception {
         Map<String ,String> postHeader = new HashMap<String, String>();
-        Map<String, String> response = GetResponse.getResponse(relyOn, relyReturn);
+        Map<String, String> response = SetRelyOnResponse.getResponse(relyOn, relyReturn);
         //判断header不为空
         boolean contains = headers.contains("Content-Type");
         if (!contains){
             postHeader.put("Content-Type", "application/json;charset=utf-8");
         }
-        Map<String, String> propertiesSql = GetDescUtil.getProperties(cookieFile);
+        Map<String, String> propertiesSql = PropertiesUtil.getProperties(cookieFile);
         for (Map.Entry<String, String> entry : propertiesSql.entrySet()) {
             postHeader.put(entry.getKey(), entry.getValue());
         }

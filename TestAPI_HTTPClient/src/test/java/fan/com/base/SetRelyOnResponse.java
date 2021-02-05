@@ -7,7 +7,7 @@ import fan.com.util.ExcelUtil;
 import java.util.HashMap;
 import java.util.Map;
 
-public class GetResponse {
+public class SetRelyOnResponse {
     //获取所依赖的接口需要的结果数据
     public static Map<String ,String> getResponse(String relyOn, String relyReturn) throws Exception {
         Map<String, String> setHeaderHashMap = null;

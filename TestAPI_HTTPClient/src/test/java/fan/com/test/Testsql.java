@@ -8,7 +8,6 @@ import java.util.Properties;
 public class TestSql {
     public static Connection connection = null;
     public static PreparedStatement preparedStatement = null;
-    //public static String sql = "SELECT sys_account FROM um_users WHERE user_phone = '13126668274'";
     public static String sql = "SELECT sys_account FROM um_users WHERE user_phone = '13126668274'";
     public static void main(String[] args) {
         /*String urlWithCe = "jdbc:postgresql://10.10.11.120/jeejio_openfire_qa";

@@ -11,7 +11,7 @@ public class SqlClient {
 
     public static ResultSet setSql(String sqlUrl, String library, String sql) {
         Properties properties = new Properties();
-        Map<String, String> propertiesSql = GetDescUtil.getProperties(sqlUrl);
+        Map<String, String> propertiesSql = PropertiesUtil.getProperties(sqlUrl);
         for (Map.Entry<String, String> entry : propertiesSql.entrySet()) {
             if (!"urlJdbc".equals(entry.getKey())){
                 properties.setProperty(entry.getKey(), entry.getValue());
